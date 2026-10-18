@@ -1,0 +1,78 @@
+
+# =========================
+# Secrets and credentials
+# =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+secrets/
+private/
+
+# =========================
+# Datasets and personal data
+# =========================
+Original_Dataset/
+Edited_Dataset/
+data/private/
+data/personal/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# =========================
+# Python artifacts
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build outputs
+# =========================
+dist/
+build/
+out/
+*.egg-info/
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE and editor settings
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Local configuration
+# =========================
+.streamlit/secrets.toml
+config.local.*

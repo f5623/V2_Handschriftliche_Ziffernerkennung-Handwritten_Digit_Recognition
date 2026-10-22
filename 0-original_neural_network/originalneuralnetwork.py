@@ -33,8 +33,12 @@ for i, folder in enumerate(digit_folders):
     
     for filename in os.listdir(test_src):
         if filename.endswith(".png"):
-            shutil.move(os.path.join(test_src, filename), test_dst) 
-
+            try:
+                print(f"Moving test: {filename}")
+                shutil.move(os.path.join(test_src, filename), test_dst)
+            except FileNotFoundError:
+                print(f"Warning: {filename} not found, skipping")
+                 
 # Data augmentation and normalization for training
 train_datagen = ImageDataGenerator(
     rescale=1./255,  # Rescale images from [0,255] to [0,1]

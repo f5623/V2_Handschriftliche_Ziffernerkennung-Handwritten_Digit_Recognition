@@ -33,6 +33,7 @@ for i, folder in enumerate(digit_folders):
     
     for filename in os.listdir(test_src):
         if filename.endswith(".png"):
+            print("test")
             shutil.move(os.path.join(test_src, filename), test_dst) 
 
 # Data augmentation and normalization for training

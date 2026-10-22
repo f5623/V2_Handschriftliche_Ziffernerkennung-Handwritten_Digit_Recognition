@@ -1,11 +1,11 @@
 import os
-
 import shutil
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
 import json
 
+# 
 # Consolidate images into single training and test directories with subfolders for each digit class
 base_dir = 'Edited_Dataset'
 train_dir = os.path.join(base_dir, 'all_training')

@@ -29,11 +29,11 @@ for i, folder in enumerate(digit_folders):
     
     for filename in os.listdir(train_src):
         if filename.endswith(".png"):
-            shutil.move(os.path.join(train_src, filename), train_dst)  # Move training images to the subdirectory
+            shutil.move(os.path.join(train_src, filename), train_dst)  
     
     for filename in os.listdir(test_src):
         if filename.endswith(".png"):
-            shutil.move(os.path.join(test_src, filename), test_dst)  # Move test images to the subdirectory
+            shutil.move(os.path.join(test_src, filename), test_dst) 
 
 # Data augmentation and normalization for training
 train_datagen = ImageDataGenerator(
